@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27DEDACD262576140001D3E8 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DEDACC262576140001D3E8 /* LogViewController.swift */; };
 		4D984FE62625538500EAB27E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D984FE52625538500EAB27E /* AppDelegate.swift */; };
 		4D984FE82625538500EAB27E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D984FE72625538500EAB27E /* SceneDelegate.swift */; };
 		4D984FEA2625538500EAB27E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D984FE92625538500EAB27E /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27DEDACC262576140001D3E8 /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
 		4D984FE22625538500EAB27E /* Hercules.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hercules.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D984FE52625538500EAB27E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D984FE72625538500EAB27E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				4D984FFB2625570400EAB27E /* PullUpViewController.swift */,
 				4D984FFE2625571200EAB27E /* PushUpViewController.swift */,
 				4D9850012625572600EAB27E /* SitUpViewController.swift */,
+				27DEDACC262576140001D3E8 /* LogViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 				4D9850022625572600EAB27E /* SitUpViewController.swift in Sources */,
 				4D984FE62625538500EAB27E /* AppDelegate.swift in Sources */,
 				4D984FFC2625570400EAB27E /* PullUpViewController.swift in Sources */,
+				27DEDACD262576140001D3E8 /* LogViewController.swift in Sources */,
 				4D984FE82625538500EAB27E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
