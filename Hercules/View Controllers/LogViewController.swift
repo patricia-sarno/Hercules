@@ -11,10 +11,11 @@ class LogViewController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
     
+    let pullup = PullUpViewController()
+    
     let names = [
-    "Pull ups:",
-    "Push ups:",
-    "Sit ups:"
+        "",
+        ""
     ]
     
     override func viewDidLoad() {
@@ -35,7 +36,7 @@ extension LogViewController: UITableViewDelegate{
 
 extension LogViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return names.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
