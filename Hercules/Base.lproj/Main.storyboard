@@ -27,11 +27,11 @@
             </objects>
             <point key="canvasLocation" x="-705" y="-283"/>
         </scene>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="xDX-2L-OEE">
             <objects>
                 <navigationController id="Vi5-TJ-CMm" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="JsQ-JV-K8B"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" id="JsQ-JV-K8B"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NEp-J2-J1p">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -44,7 +44,7 @@
             </objects>
             <point key="canvasLocation" x="-1190" y="485"/>
         </scene>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="XO5-ia-gFP">
             <objects>
                 <viewController id="7VA-2H-zhB" customClass="ViewController" customModule="Hercules" customModuleProvider="target" sceneMemberID="viewController">
@@ -104,13 +104,13 @@
                             <constraint firstItem="pIk-2M-82P" firstAttribute="top" secondItem="UwH-kH-jZO" secondAttribute="top" id="wNm-kt-Vuf"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="xXT-zL-VKC"/>
+                    <navigationItem key="navigationItem" title="Home" id="xXT-zL-VKC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXf-yn-yuK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1191" y="1314"/>
         </scene>
-        <!--Pull Up View Controller-->
+        <!--Pull Up Counter-->
         <scene sceneID="qY2-ux-f2V">
             <objects>
                 <viewController id="Iam-FV-I6b" customClass="PullUpViewController" customModule="Hercules" customModuleProvider="target" sceneMemberID="viewController">
@@ -178,7 +178,7 @@
                             <constraint firstItem="ebE-VU-I8l" firstAttribute="trailing" secondItem="XYU-9p-ZSo" secondAttribute="trailing" constant="20" id="zzG-x9-9oO"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="mOB-59-6Cs"/>
+                    <navigationItem key="navigationItem" title="Pull Up Counter" id="mOB-59-6Cs"/>
                     <connections>
                         <outlet property="pullUpCount" destination="FpT-hv-WNp" id="WCV-Tq-1PD"/>
                     </connections>
@@ -187,7 +187,7 @@
             </objects>
             <point key="canvasLocation" x="-1970" y="2138"/>
         </scene>
-        <!--Push Up View Controller-->
+        <!--Push Up Counter-->
         <scene sceneID="BHp-tf-Hvl">
             <objects>
                 <viewController id="60F-vK-8Fm" customClass="PushUpViewController" customModule="Hercules" customModuleProvider="target" sceneMemberID="viewController">
@@ -246,7 +246,7 @@
                             <constraint firstItem="8mn-WN-tKB" firstAttribute="centerY" secondItem="eeA-v4-siE" secondAttribute="centerY" id="zOd-eI-kbc"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="G0m-rI-lA7"/>
+                    <navigationItem key="navigationItem" title="Push Up Counter" id="G0m-rI-lA7"/>
                     <connections>
                         <outlet property="pushUpCount" destination="1bC-bk-ncf" id="HMB-2X-Ugm"/>
                     </connections>
@@ -255,7 +255,7 @@
             </objects>
             <point key="canvasLocation" x="-1191" y="2138"/>
         </scene>
-        <!--Sit Up View Controller-->
+        <!--Sit Up Counter-->
         <scene sceneID="eTO-4y-FU2">
             <objects>
                 <viewController id="S5L-kL-L7b" customClass="SitUpViewController" customModule="Hercules" customModuleProvider="target" sceneMemberID="viewController">
@@ -314,7 +314,7 @@
                             <constraint firstItem="KL0-sy-bLx" firstAttribute="centerX" secondItem="gMr-YA-GJB" secondAttribute="centerX" id="zVi-qj-a66"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="sL5-AZ-oEP"/>
+                    <navigationItem key="navigationItem" title="Sit Up Counter" id="sL5-AZ-oEP"/>
                     <connections>
                         <outlet property="sitUpCount" destination="yLG-00-V27" id="ztH-Ua-cM5"/>
                     </connections>
@@ -364,11 +364,11 @@
             </objects>
             <point key="canvasLocation" x="-246" y="1314"/>
         </scene>
-        <!--Item-->
+        <!--Daily Log-->
         <scene sceneID="mxS-Xp-vhz">
             <objects>
                 <navigationController id="wD9-Dd-MuD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Ruh-pl-QRf"/>
+                    <tabBarItem key="tabBarItem" title="Daily Log" image="book.fill" catalog="system" id="Ruh-pl-QRf"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="oxX-Cp-cZh">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -383,6 +383,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="book.fill" catalog="system" width="128" height="102"/>
+        <image name="homekit" catalog="system" width="128" height="106"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
