@@ -11,8 +11,10 @@ class LogViewController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
     
+    var pullUpNumber: String = ""
+    
     let names = [
-    "Pull ups:",
+    "omg",
     "Push ups:",
     "Sit ups:"
     ]

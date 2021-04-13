@@ -17,6 +17,4 @@ class PullUpViewController: UIViewController {
         counter += 1
         pullUpCount.text = "\(counter)"
     }
-    
-
 }

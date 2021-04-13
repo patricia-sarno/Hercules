@@ -52,8 +52,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="cQB-Qr-xet">
+                                <rect key="frame" x="0.0" y="88" width="414" height="744.5"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pIk-2M-82P">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="661.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Workouts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4y1-Rm-WdV">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
@@ -64,26 +67,33 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGV-Zi-4gR">
-                                        <rect key="frame" x="0.0" y="150" width="414" height="191.5"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGV-Zi-4gR">
+                                        <rect key="frame" x="0.0" y="150" width="414" height="170.5"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="eQb-vS-2GD"/>
                                         </constraints>
-                                        <state key="normal" title="Pull Up"/>
+                                        <state key="normal" title="Pull Up" image="pullups">
+                                            <color key="titleColor" systemColor="systemBlueColor"/>
+                                        </state>
                                         <connections>
                                             <segue destination="Iam-FV-I6b" kind="show" id="H1t-ab-5cQ"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBB-il-qM6">
-                                        <rect key="frame" x="0.0" y="341.5" width="414" height="192"/>
-                                        <state key="normal" title="Push Up"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBB-il-qM6">
+                                        <rect key="frame" x="0.0" y="320.5" width="414" height="170.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Push Up" image="pushups">
+                                            <color key="titleColor" systemColor="systemBlueColor"/>
+                                        </state>
                                         <connections>
                                             <segue destination="60F-vK-8Fm" kind="show" id="LIR-Gn-0V8"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyj-SS-HpC">
-                                        <rect key="frame" x="0.0" y="533.5" width="414" height="191.5"/>
-                                        <state key="normal" title="Sit Up"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyj-SS-HpC">
+                                        <rect key="frame" x="0.0" y="491" width="414" height="170.5"/>
+                                        <state key="normal" title="Sit Up" image="situps">
+                                            <color key="titleColor" systemColor="systemBlueColor"/>
+                                        </state>
                                         <connections>
                                             <segue destination="S5L-kL-L7b" kind="show" id="xte-K5-PKg"/>
                                         </connections>
@@ -98,9 +108,13 @@
                         <viewLayoutGuide key="safeArea" id="UwH-kH-jZO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="cQB-Qr-xet" secondAttribute="bottom" id="2vO-a2-IXh"/>
                             <constraint firstItem="pIk-2M-82P" firstAttribute="leading" secondItem="UwH-kH-jZO" secondAttribute="leading" id="UR8-Ns-bwo"/>
                             <constraint firstItem="UwH-kH-jZO" firstAttribute="trailing" secondItem="pIk-2M-82P" secondAttribute="trailing" id="aZS-ZU-t4a"/>
                             <constraint firstItem="UwH-kH-jZO" firstAttribute="bottom" secondItem="pIk-2M-82P" secondAttribute="bottom" id="mJt-fv-nGY"/>
+                            <constraint firstItem="UwH-kH-jZO" firstAttribute="trailing" secondItem="cQB-Qr-xet" secondAttribute="trailing" id="nUE-sx-uhA"/>
+                            <constraint firstItem="cQB-Qr-xet" firstAttribute="leading" secondItem="Ot0-ga-3ku" secondAttribute="leading" id="oML-xY-hBb"/>
+                            <constraint firstItem="cQB-Qr-xet" firstAttribute="top" secondItem="UwH-kH-jZO" secondAttribute="top" id="tmP-Oc-0Bu"/>
                             <constraint firstItem="pIk-2M-82P" firstAttribute="top" secondItem="UwH-kH-jZO" secondAttribute="top" id="wNm-kt-Vuf"/>
                         </constraints>
                     </view>
@@ -178,7 +192,9 @@
                             <constraint firstItem="ebE-VU-I8l" firstAttribute="trailing" secondItem="XYU-9p-ZSo" secondAttribute="trailing" constant="20" id="zzG-x9-9oO"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Pull Up Counter" id="mOB-59-6Cs"/>
+                    <navigationItem key="navigationItem" title="Pull Up Counter" id="mOB-59-6Cs">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="tg5-cx-31B"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="pullUpCount" destination="FpT-hv-WNp" id="WCV-Tq-1PD"/>
                     </connections>
@@ -383,10 +399,17 @@
         </scene>
     </scenes>
     <resources>
+        <image name="background" width="138" height="298.5"/>
         <image name="book.fill" catalog="system" width="128" height="102"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="pullups" width="170.5" height="170.5"/>
+        <image name="pushups" width="170.5" height="170.5"/>
+        <image name="situps" width="170.5" height="170.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
