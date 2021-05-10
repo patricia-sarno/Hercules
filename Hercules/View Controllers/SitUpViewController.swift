@@ -8,8 +8,11 @@
 import UIKit
 import CoreMotion
 import FirebaseDatabase
+import AVFoundation
 
 class SitUpViewController: UIViewController {
+    
+    var player: AVAudioPlayer!
 
     @IBOutlet weak var sitUpCount: UILabel!
     
@@ -45,6 +48,7 @@ class SitUpViewController: UIViewController {
                         //print ("\(rotation.x)")
                         self.tempCounter += 1
                         if self.tempCounter > 0 {
+                            self.playSound(soundName: "PingSound")
                             self.counter += 1
                             self.tempCounter = 0
                         }
@@ -57,5 +61,12 @@ class SitUpViewController: UIViewController {
             }
         }
     }
+    
+    func playSound(soundName: String) {
+            let url = Bundle.main.url(forResource: soundName, withExtension: "wav")
+            player = try! AVAudioPlayer(contentsOf: url!)
+            player.play()
+            
+        }
 
 }

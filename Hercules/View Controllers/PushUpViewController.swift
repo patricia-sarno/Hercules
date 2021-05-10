@@ -7,10 +7,13 @@
 
 import UIKit
 import FirebaseDatabase
+import AVFoundation
 
 class PushUpViewController: UIViewController {
 
     @IBOutlet weak var pushUpCount: UILabel!
+    
+    var player: AVAudioPlayer!
     
     let device = UIDevice.current
     
@@ -39,6 +42,7 @@ class PushUpViewController: UIViewController {
             
             
             if device.proximityState {
+                playSound(soundName: "PingSound")
                 counter += 1
                 self.pushUpCount.text = "\(counter)"
             }
@@ -48,5 +52,12 @@ class PushUpViewController: UIViewController {
         
         
     }
+    
+    func playSound(soundName: String) {
+            let url = Bundle.main.url(forResource: soundName, withExtension: "wav")
+            player = try! AVAudioPlayer(contentsOf: url!)
+            player.play()
+            
+        }
 
 }
