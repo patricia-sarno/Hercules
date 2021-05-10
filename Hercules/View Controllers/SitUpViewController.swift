@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreMotion
+import FirebaseDatabase
 
 class SitUpViewController: UIViewController {
 
@@ -17,10 +18,16 @@ class SitUpViewController: UIViewController {
     var counter = 0
     var tempCounter = 0
     
+    let ref = Database.database().reference()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         myGyro()
 
+    }
+    
+    @IBAction func saveButtonPressed(_ sender: UIBarButtonItem) {
+        ref.childByAutoId().setValue(["WorkoutType":"Sit Ups", "Reps": counter])
     }
     
     func myGyro() {

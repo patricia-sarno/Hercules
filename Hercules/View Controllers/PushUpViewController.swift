@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class PushUpViewController: UIViewController {
 
@@ -15,9 +16,15 @@ class PushUpViewController: UIViewController {
     
     var counter = 0
     
+    let ref = Database.database().reference()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         proximitySensor()
+    }
+    
+    @IBAction func saveButtonPressed(_ sender: UIBarButtonItem) {
+        ref.childByAutoId().setValue(["WorkoutType":"Push Ups", "Reps": counter])
     }
     
     func proximitySensor() {

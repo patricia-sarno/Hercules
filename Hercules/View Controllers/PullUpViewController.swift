@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class PullUpViewController: UIViewController {
 
@@ -13,8 +14,13 @@ class PullUpViewController: UIViewController {
     
     var counter = 0
     
+    let ref = Database.database().reference()
+    
     @IBAction func pullUpButtonPressed(_ sender: UIButton) {
         counter += 1
         pullUpCount.text = "\(counter)"
+    }
+    @IBAction func saveButtonPressed(_ sender: UIBarButtonItem) {
+        ref.childByAutoId().setValue(["WorkoutType":"Pull ups", "Reps": counter])
     }
 }
