@@ -28,15 +28,16 @@ class PushUpViewController: UIViewController {
     
     @IBAction func saveButtonPressed(_ sender: UIBarButtonItem) {
         //Gets current date and time
-        let currentDateTime = Date()
+        let currentDate = Date()
         
         //Initializes the date formatter and set the style
         let formatter = DateFormatter()
-        formatter.timeStyle = .medium
-        formatter.dateStyle = .long
+        formatter.timeZone = .current
+        formatter.locale = .current
+        formatter.dateFormat = "MM/dd/yyyy"
         
         //Gets the date and time String from the date object
-        let dateTimeString = formatter.string(from: currentDateTime)
+        let dateTimeString = formatter.string(from: currentDate)
         
         //Creates new id under Workouts and gives it a value.
         ref.child("Workouts").childByAutoId().setValue("\(dateTimeString) - \(counter) Reps of Push Ups")
