@@ -348,7 +348,7 @@
             </objects>
             <point key="canvasLocation" x="-403" y="2138"/>
         </scene>
-        <!--Log View Controller-->
+        <!--Daily Log-->
         <scene sceneID="uRQ-O7-fAe">
             <objects>
                 <viewController id="5qT-Hn-6xd" customClass="LogViewController" customModule="Hercules" customModuleProvider="target" sceneMemberID="viewController">
@@ -370,45 +370,44 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7Xa-zn-ubI">
-                                <rect key="frame" x="20" y="101" width="51" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQd-GM-3QW">
-                                <rect key="frame" x="236" y="101" width="39" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbL-Hl-R3t">
-                                <rect key="frame" x="349" y="101" width="45" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="type of workout" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tYL-3x-GhO">
-                                <rect key="frame" x="116" y="87" width="76" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lMN-2Q-HWd">
+                                <rect key="frame" x="20" y="88" width="392.5" height="41"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7Xa-zn-ubI">
+                                        <rect key="frame" x="0.0" y="8.5" width="117.5" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tYL-3x-GhO">
+                                        <rect key="frame" x="137.5" y="10.5" width="117.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbL-Hl-R3t">
+                                        <rect key="frame" x="275" y="8.5" width="117.5" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="D4a-hb-DWn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="w7i-ba-OFl" firstAttribute="leading" secondItem="D4a-hb-DWn" secondAttribute="leading" id="E24-ug-ae1"/>
+                            <constraint firstItem="lMN-2Q-HWd" firstAttribute="leading" secondItem="D4a-hb-DWn" secondAttribute="leading" constant="20" id="czZ-DW-Z98"/>
                             <constraint firstItem="D4a-hb-DWn" firstAttribute="trailing" secondItem="w7i-ba-OFl" secondAttribute="trailing" id="e2n-4k-AJw"/>
                             <constraint firstItem="D4a-hb-DWn" firstAttribute="bottom" secondItem="w7i-ba-OFl" secondAttribute="bottom" id="isn-EN-G1r"/>
                             <constraint firstItem="w7i-ba-OFl" firstAttribute="top" secondItem="D4a-hb-DWn" secondAttribute="top" constant="40" id="kc2-5I-cLM"/>
+                            <constraint firstAttribute="trailing" secondItem="lMN-2Q-HWd" secondAttribute="trailing" constant="2" id="mrB-I4-CiO"/>
+                            <constraint firstItem="lMN-2Q-HWd" firstAttribute="top" secondItem="D4a-hb-DWn" secondAttribute="top" id="xcW-tV-e6q"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="NDJ-cR-dsI"/>
+                    <navigationItem key="navigationItem" title="Daily Log" id="NDJ-cR-dsI"/>
                     <connections>
                         <outlet property="tableView" destination="w7i-ba-OFl" id="x7o-da-QWk"/>
                     </connections>

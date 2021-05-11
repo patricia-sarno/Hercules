@@ -40,7 +40,7 @@ class PushUpViewController: UIViewController {
         let dateTimeString = formatter.string(from: currentDate)
         
         //Creates new id under Workouts and gives it a value.
-        ref.child("Workouts").childByAutoId().setValue("\(dateTimeString) - \(counter) Reps of Push Ups")
+        ref.child("Workouts").childByAutoId().setValue("\(dateTimeString)             Push Ups             \(counter)")
     }
     
     func proximitySensor() {

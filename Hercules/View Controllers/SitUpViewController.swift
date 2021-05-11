@@ -43,7 +43,7 @@ class SitUpViewController: UIViewController {
         let dateTimeString = formatter.string(from: currentDate)
         
         //Creates new id under Workouts and gives it a value.
-        ref.child("Workouts").childByAutoId().setValue("\(dateTimeString) - \(counter) Reps of Sit Ups")
+        ref.child("Workouts").childByAutoId().setValue("\(dateTimeString)             Sit Ups                \(counter)")
     }
     
     func myGyro() {
