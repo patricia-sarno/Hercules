@@ -18,7 +18,7 @@
 		4D984FFC2625570400EAB27E /* PullUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D984FFB2625570400EAB27E /* PullUpViewController.swift */; };
 		4D984FFF2625571200EAB27E /* PushUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D984FFE2625571200EAB27E /* PushUpViewController.swift */; };
 		4D9850022625572600EAB27E /* SitUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9850012625572600EAB27E /* SitUpViewController.swift */; };
-		4DD945AE2648DBC600CC3849 /* PingSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DD945AD2648DBC500CC3849 /* PingSound.wav */; };
+		4DD945BD2649DBEB00CC3849 /* PingSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DD945BC2649DBEA00CC3849 /* PingSound.wav */; };
 		76F2D2FB4E81030295A93B77 /* Pods_Hercules.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ACE39823AA05AEB85A75A41 /* Pods_Hercules.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +37,7 @@
 		4D984FFB2625570400EAB27E /* PullUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullUpViewController.swift; sourceTree = "<group>"; };
 		4D984FFE2625571200EAB27E /* PushUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushUpViewController.swift; sourceTree = "<group>"; };
 		4D9850012625572600EAB27E /* SitUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SitUpViewController.swift; sourceTree = "<group>"; };
-		4DD945AD2648DBC500CC3849 /* PingSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = PingSound.wav; path = ../../../Downloads/PingSound.wav; sourceTree = "<group>"; };
+		4DD945BC2649DBEA00CC3849 /* PingSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = PingSound.wav; sourceTree = "<group>"; };
 		94055CA50C3225700B2C6D68 /* Pods-Hercules.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hercules.release.xcconfig"; path = "Target Support Files/Pods-Hercules/Pods-Hercules.release.xcconfig"; sourceTree = "<group>"; };
 		EB63C0E21CABA55D9F32465D /* Pods-Hercules.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hercules.debug.xcconfig"; path = "Target Support Files/Pods-Hercules/Pods-Hercules.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,7 +87,7 @@
 				4D984FE72625538500EAB27E /* SceneDelegate.swift */,
 				4D9850042625573300EAB27E /* View Controllers */,
 				4D984FEB2625538500EAB27E /* Main.storyboard */,
-				4DD945AD2648DBC500CC3849 /* PingSound.wav */,
+				4DD945BC2649DBEA00CC3849 /* PingSound.wav */,
 				4D984FEE2625538B00EAB27E /* Assets.xcassets */,
 				4D984FF02625538B00EAB27E /* LaunchScreen.storyboard */,
 				021A65142648C1D00063FA13 /* GoogleService-Info.plist */,
@@ -179,7 +179,7 @@
 				4D984FF22625538B00EAB27E /* LaunchScreen.storyboard in Resources */,
 				021A65152648C1D00063FA13 /* GoogleService-Info.plist in Resources */,
 				4D984FEF2625538B00EAB27E /* Assets.xcassets in Resources */,
-				4DD945AE2648DBC600CC3849 /* PingSound.wav in Resources */,
+				4DD945BD2649DBEB00CC3849 /* PingSound.wav in Resources */,
 				4D984FED2625538500EAB27E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -26,7 +26,7 @@ class PullUpViewController: UIViewController {
     }
     
     @IBAction func saveButtonPressed(_ sender: UIBarButtonItem) {
-        ref.childByAutoId().setValue(["WorkoutType":"Pull ups", "Reps": counter])
+        ref.child("Workouts").childByAutoId().setValue("\(counter) Reps of Pull Ups")
     }
     
     func playSound(soundName: String) {
