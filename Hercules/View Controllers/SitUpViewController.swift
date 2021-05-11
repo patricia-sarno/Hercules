@@ -30,7 +30,19 @@ class SitUpViewController: UIViewController {
     }
     
     @IBAction func saveButtonPressed(_ sender: UIBarButtonItem) {
-        ref.childByAutoId().setValue(["WorkoutType":"Sit Ups", "Reps": counter])
+        //Gets current date and time
+        let currentDateTime = Date()
+        
+        //Initializes the date formatter and set the style
+        let formatter = DateFormatter()
+        formatter.timeStyle = .medium
+        formatter.dateStyle = .long
+        
+        //Gets the date and time String from the date object
+        let dateTimeString = formatter.string(from: currentDateTime)
+        
+        //Creates new id under Workouts and gives it a value.
+        ref.child("Workouts").childByAutoId().setValue("\(dateTimeString) - \(counter) Reps of Sit Ups")
     }
     
     func myGyro() {
